@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/images/logo.png">
+    <meta name="Description" content="Student at CentraleSupelec | Web and Mobile developer | Data Scientist">
+    <meta name="keywords" content="data science, deep learning, learning, centrale, centralesupelec, machine learning, IA, david, elmalih, el malih, elmaleh, web, mobile, developer, react, react native, JS, javascript, python, keras, tensorflow, scikit, scikit learn, Java, student, resume">
+    <meta name="Author" content="David El Malih">
+    <meta name="Copyright" content="David El Malih © Copyright 2019" />
+    <meta name="Identifier-URL" content="http://delmalih.github.io">
+    <meta name="Location" content="PARIS, FRANCE">
+    <title>David El Malih</title>
+    <style>
+      html {
+        background-attachment: scroll !important;
+      }
+      html, body, #root {
+        background-color: #E0E1E1;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script>
+    <script type='text/javascript'>
+      $(function() {
+        $('#Navbar').hide();
+        $(window).scroll(() => {
+          if ( $(window).scrollTop() < $("#Home").height() - $('#Navbar').height() - 10) {
+            $('#Navbar').hide();
+          } else {
+            $('#Navbar').show();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
