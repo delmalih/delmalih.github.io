@@ -23,7 +23,7 @@ import {
 } from './style';
 
 const scrollFunc = () => {
-  const elm = document.getElementById('QuickBio');
+  const elm = document.getElementById('WorkingExp');
   window.scrollTo({
     top: elm.offsetTop - 60,
     left: 0,
@@ -43,7 +43,7 @@ const BigBackground = props => {
         <LogoDiv>
           <Logo src='images/profilepic_croped.png' alt='david elmalih logo' />
         </LogoDiv>
-        <Name>{lang.name}</Name>
+        <Name>David EL MALIH</Name>
         <SubName>{lang.infos}</SubName>
         <SubName>{lang.studies}</SubName>
         <Icons>

@@ -20,6 +20,16 @@ export const Container = styled(Cont, () => ({
   color: '#222',
 }));
 
+export const Title = styled('div', () => ({
+  padding: '20px',
+  fontSize: '60px',
+  display: 'flex',
+  textAlign: 'center',
+  flexDirection: 'column',
+  alinItems: 'center',
+  justifyContent: 'center',
+}));
+
 export const ContentDiv = styled('div', () => ({
   padding: '20px',
   fontSize: '20px',
@@ -29,16 +39,6 @@ export const ContentDiv = styled('div', () => ({
   boxShadow: '0px 0px 100px -25px rgba(0, 0, 0, 0.75)',
   '-webkit-box-shadow': '0px 0px 100px -25px rgba(0, 0, 0, 0.75)',
   '-moz-box-shadow': '0px 0px 100px -25px rgba(0, 0, 0, 0.75)',
-}));
-
-export const Title = styled('div', () => ({
-  padding: '20px',
-  fontSize: '60px',
-  display: 'flex',
-  textAlign: 'center',
-  flexDirection: 'column',
-  alinItems: 'center',
-  justifyContent: 'center',
 }));
 
 export const Item = styled('div', () => ({

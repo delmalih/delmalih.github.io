@@ -1,13 +1,22 @@
 /* EXPORT */
 
 export default {
-  title: "Quick bio",
-  location: "Paris, France",
-  mail: "da.elmalih@gmail.com",
-  phone: "(+33) 06 50 12 98 56",
+  title: "Personnal informations",
   languageTitle: "Languages",
-  fr: "French - Native",
-  en: "English - Full professional proficiency",
-  is: "Hebrew - High working proficiency",
-  ar: "Arabic - Elementary proficiency",
+  lang1: {
+    name: "French",
+    level: "Native",
+  },
+  lang2: {
+    name: "English",
+    level: "Full professional proficiency",
+  },
+  lang3: {
+    name: "Hebrew",
+    level: "High working proficiency",
+  },
+  lang4: {
+    name: "Arabic",
+    level: "Elementary proficiency",
+  },
 };

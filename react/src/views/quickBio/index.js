@@ -12,8 +12,8 @@ import Lang_fr from './langs/fr';
 import {
     BackgroundDiv,
     Container,
-    Title,
     ContentDiv,
+    Title,
     Item,
     ItemIcon,
     ItemContent,
@@ -30,15 +30,15 @@ const QuickBio = props => {
                 <ContentDiv>
                     <Item>
                         <ItemIcon><Fa name='map-marker' /></ItemIcon>
-                        <ItemContent>{lang.location}</ItemContent>
+                        <ItemContent>Paris, FR</ItemContent>
                     </Item>
                     <Item>
                         <ItemIcon><Fa name='envelope-o' /></ItemIcon>
-                        <ItemContent>{lang.mail}</ItemContent>
+                        <ItemContent>da.elmalih@gmail.com</ItemContent>
                     </Item>
                     <Item>
                         <ItemIcon><Fa name='phone' /></ItemIcon>
-                        <ItemContent>{lang.phone}</ItemContent>
+                        <ItemContent>(+33) 06 50 12 98 56</ItemContent>
                     </Item>
                     <hr />
                     <Item>
@@ -46,19 +46,19 @@ const QuickBio = props => {
                         <ItemContent><b>{lang.languageTitle}</b></ItemContent>
                     </Item>
                     <Lang>
-                        <LangTitle>{lang.fr}</LangTitle>
+                        <LangTitle><b>{lang.lang1.name}</b> - {lang.lang1.level}</LangTitle>
                         <Progress color="info" value="100" />
                     </Lang>
                     <Lang>
-                        <LangTitle>{lang.en}</LangTitle>
+                        <LangTitle><b>{lang.lang2.name}</b> - {lang.lang2.level}</LangTitle>
                         <Progress color="info" value="95" />
                     </Lang>
                     <Lang>
-                        <LangTitle>{lang.is}</LangTitle>
+                        <LangTitle><b>{lang.lang3.name}</b> - {lang.lang3.level}</LangTitle>
                         <Progress color="info" value="75" />
                     </Lang>
                     <Lang>
-                        <LangTitle>{lang.ar}</LangTitle>
+                        <LangTitle><b>{lang.lang4.name}</b> - {lang.lang4.level}</LangTitle>
                         <Progress color="info" value="45" />
                     </Lang>
                 </ContentDiv>

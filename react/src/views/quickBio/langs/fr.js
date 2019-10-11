@@ -1,13 +1,22 @@
 /* EXPORT */
 
 export default {
-  title: "Présentation",
-  location: "Paris, France",
-  mail: "da.elmalih@gmail.com",
-  phone: "(+33) 06 50 12 98 56",
+  title: "Infos personnelles",
   languageTitle: "Langues",
-  fr: "Français - Langue natale",
-  en: "Anglais - Compétences professionnelle complètes",
-  is: "Hébreu - Très bon niveau",
-  ar: "Arabe - Notions",
+  lang1: {
+    name: "Français",
+    level: "Langue natale",
+  },
+  lang2: {
+    name: "Anglais",
+    level: "Compétences professionnelle complètes",
+  },
+  lang3: {
+    name: "Hébreu",
+    level: "Très bon niveau",
+  },
+  lang4: {
+    name: "Arabe",
+    level: "Notions",
+  },
 };
