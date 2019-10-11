@@ -11,20 +11,6 @@ export const BackgroundDiv = styled('div', () => ({
   backgroundPosition: '0px 0px, 38% 50%',
 }));
 
-export const Flags = styled('div', () => ({
-  display: 'flex',
-  flex: 1,
-  flexDirection: 'row',
-  alignItems: 'center',
-  justifyContent: 'flex-end',
-}));
-
-export const Flag = styled('img', () => ({
-  width: '30px',
-  margin: '5px',
-  cursor: 'pointer',
-}));
-
 export const CenterDiv = styled(Container, () => ({
   display: 'flex',
   minHeight: '100vh',

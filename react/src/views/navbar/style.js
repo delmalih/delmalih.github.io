@@ -49,16 +49,3 @@ export const NavItem = styled('div', () => ({
     transition: 'all 0.25s ease-in',
   },
 }));
-
-export const Flags = styled('div', () => ({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-}));
-
-export const Flag = styled('img', () => ({
-  cursor: 'pointer',
-  width: '30px',
-  height: 'auto',
-  margin: '5px',
-}))
