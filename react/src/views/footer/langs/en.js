@@ -1,3 +1,3 @@
 export default {
-  content: "David El Malih © 2017 | All rights reserved.",
+  content: "David El Malih © 2019 | All rights reserved.",
 };

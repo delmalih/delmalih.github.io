@@ -23,7 +23,7 @@ import {
 } from './style';
 
 const scrollFunc = () => {
-  const elm = document.getElementById('Bio');
+  const elm = document.getElementById('QuickBio');
   window.scrollTo({
     top: elm.offsetTop - 60,
     left: 0,

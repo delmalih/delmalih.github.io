@@ -4,9 +4,7 @@ import React, { Component } from 'react';
 // Local
 import Navbar from './navbar/';
 import BigBackground from './bigBackground/';
-import Bio from './bio/';
-import MiddleBar from './middleBar/';
-import Contact from './contact/';
+import QuickBio from './quickBio/';
 import Footer from './footer/';
 
 class Home extends Component {
@@ -36,9 +34,9 @@ class Home extends Component {
           lang={lang}
           changeLang={this.onChangeLang}
         />
-        <Bio lang={lang} />
-        <MiddleBar lang={lang} />
-        <Contact lang={lang} />
+        <QuickBio lang={lang} />
+        {/* <MiddleBar lang={lang} />
+        <Contact lang={lang} /> */}
         <Footer lang={lang} />
       </div>
     );
