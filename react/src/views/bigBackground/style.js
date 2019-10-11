@@ -5,7 +5,7 @@ import FA from 'react-fontawesome';
 
 export const BackgroundDiv = styled('div', () => ({
   minHeight: '100vh',
-  backgroundImage: 'linear-gradient(180deg, rgba(0, 0, 0, .57), #222), url(https://firebasestorage.googleapis.com/v0/b/myresume-5ad6c.appspot.com/o/others%2Fbackground.jpg?alt=media&token=5812b590-0eda-4e2f-9ea0-33aabdde7499)',
+  backgroundImage: 'linear-gradient(180deg, rgba(0, 0, 0, .57), #222), url(images/background.jpg)',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: '0px 0px, 38% 50%',
