@@ -1,6 +1,10 @@
 // React
 import React from 'react';
 
+// Local
+import ListEvents from "./components/listEvents.component";
+import events from "./events";
+
 // Style
 import {
     BackgroundDiv,
@@ -14,6 +18,7 @@ const WorkingExp = () => (
         <Container>
             <Title>Experience</Title>
             <ContentDiv>
+                <ListEvents events={events} />
             </ContentDiv>
         </Container>
     </BackgroundDiv>
