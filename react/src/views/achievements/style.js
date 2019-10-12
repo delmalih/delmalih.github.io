@@ -20,7 +20,7 @@ export const Container = styled(Cont, () => ({
 
 export const Title = styled('div', () => ({
   padding: '20px',
-  fontSize: '60px',
+  fontSize: '45px',
   display: 'flex',
   textAlign: 'center',
   flexDirection: 'column',

@@ -1,10 +1,9 @@
 // React
 import React from 'react';
-import PropTypes from 'prop-types';
 
-// Langs
-// import Lang_en from './langs/en';
-// import Lang_fr from './langs/fr';
+// Local
+import ListEvents from "./components/listEvents.component";
+import events from "./events";
 
 // Style
 import {
@@ -14,21 +13,15 @@ import {
     ContentDiv,
 } from './style';
 
-const Education = props => {
-    // const lang = props.lang === 'fr' ? Lang_fr : Lang_en;
-    return (
-        <BackgroundDiv id="Education">
-            <Container>
-                <Title>Education</Title>
-                <ContentDiv>
-                </ContentDiv>
-            </Container>
-        </BackgroundDiv>
-    );
-}
-
-Education.propTypes = {
-  lang: PropTypes.node,
-}
+const Education = () => (
+    <BackgroundDiv id="Education">
+        <Container>
+            <Title>Education</Title>
+            <ContentDiv>
+                <ListEvents events={events} />
+            </ContentDiv>
+        </Container>
+    </BackgroundDiv>
+);
 
 export default Education;

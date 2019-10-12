@@ -2,7 +2,6 @@
 import React from 'react';
 
 const work_yoobic = {
-    imgSrc: "images/experience/yoobic.png",
     title: "Research Data Scientist Intern @ Yoobic",
     date: "Sep 2018 - Aug 2019 (1 year)",
     description: (
@@ -20,7 +19,6 @@ const work_yoobic = {
 };
 
 const work_pdl = {
-    imgSrc: "images/experience/pdl.png",
     title: "Software Engineer @ ParisDigitalLab",
     date: "Jan 2018 - Jul 2018 (7 months)",
     description: (
@@ -58,7 +56,6 @@ const work_pdl = {
 };
 
 const work_lsdj = {
-    imgSrc: "images/experience/lsdj.png",
     title: "Web & Mobile developer @ Le Silence Des Justes",
     date: "Nov 2017 - Feb 2018 (4 months)",
     description: (
@@ -74,7 +71,6 @@ const work_lsdj = {
 };
 
 const work_valeo = {
-    imgSrc: "images/experience/valeo.png",
     title: "Data Scientist Intern @ Valeo Group",
     date: "Jun 2017 - Jul 2017 (2 months)",
     description: (
@@ -90,7 +86,6 @@ const work_valeo = {
 };
 
 const work_cc = {
-    imgSrc: "images/experience/conduitecenter.png",
     title: "Full Stack developer @ ConduiteCenter",
     date: "Jan 2017 - Jan 2018 (1 year)",
     description: (

@@ -33,7 +33,7 @@ export const ContentDiv = styled('div', () => ({
 
 export const Title = styled('div', () => ({
   padding: '20px',
-  fontSize: '60px',
+  fontSize: '45px',
   display: 'flex',
   textAlign: 'center',
   flexDirection: 'column',

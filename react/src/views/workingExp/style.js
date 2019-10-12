@@ -22,7 +22,7 @@ export const Container = styled(Cont, () => ({
 
 export const Title = styled('div', () => ({
   padding: '20px',
-  fontSize: '60px',
+  fontSize: '45px',
   display: 'flex',
   textAlign: 'center',
   flexDirection: 'column',
@@ -85,5 +85,4 @@ export const Media = styled(M, props => ({
   height: props.object ? '100px' : 'auto',
   fontSize: props.heading ? '20px' : '18px',
   marginLeft: props.heading ? '10px' : '0',
-  paddingLeft: props.body ? '10px' : '0',
 }));
