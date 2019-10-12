@@ -20,6 +20,11 @@
       html, body, #root {
         background-color: #E0E1E1;
       }
+      @media screen and (max-width: 1439px) {
+          #Sidebar {
+              display: none !important;
+          }
+      }
     </style>
   </head>
   <body>
@@ -30,14 +35,102 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script>
     <script type='text/javascript'>
       $(function() {
+        // Navbar hiding
         $('#Navbar').hide();
+
+        // general consts
+        var bodyHeight = $('body').height();
+        var windowHeight = $(window).height();
+        var sidebarTop = $('#Sidebar').offset().top;
+        var homeBottom = $('#Home').offset().top + $('#Home').height();
+        var workingExpBottom = $('#WorkingExp').offset().top + $('#WorkingExp').height();
+        var skillsBottom = $('#Skills').offset().top + $('#Skills').height();
+        var educationBottom = $('#Education').offset().top + $('#Education').height();
+        var achievementsBottom = $('#Achievements').offset().top + $('#Achievements').height();
+        var currentSection = 'Home';
+        var newCurrenSection = currentSection;
+
+        // Home badge
+        var homeTop = $('#Home').offset().top;
+        var badgeHomeTop = homeTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        $('#SidebarBadgeHome').css({top: badgeHomeTop});
+
+        // WorkingExp badge
+        var workingExpTop = $('#WorkingExp').offset().top;
+        var badgeWorkingExpTop = workingExpTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        $('#SidebarBadgeWorkingExp').css({top: badgeWorkingExpTop});
+
+        // Skills badge
+        var skillsTop = $('#Skills').offset().top;
+        var badgeSkillsTop = skillsTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        $('#SidebarBadgeSkills').css({top: badgeSkillsTop});
+
+        // Education badge
+        var educationTop = $('#Education').offset().top;
+        var badgeEducationTop = educationTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        $('#SidebarBadgeEducation').css({top: badgeEducationTop});
+
+        // Achievements badge
+        var achievementsTop = $('#Achievements').offset().top;
+        var badgeAchievementsTop = achievementsTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        $('#SidebarBadgeAchievements').css({top: badgeAchievementsTop});
+
+        // quickBio badge
+        var quickBioTop = $('#QuickBio').offset().top;
+        var badgeQuickBioTop = quickBioTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        $('#SidebarBadgeQuickBio').css({top: badgeQuickBioTop});
+
+        // Functions
+        function setActiveSection(newCurrenSection, oldCurrentSection) {
+          var activeCss = { fontSize: '14px' }
+          var defaultCSS = { fontSize: '10px' };
+          $('#SidebarBadge' + newCurrenSection).animate(activeCss, 500);
+          $('#SidebarBadge' + newCurrenSection).css('background', '#17a2b8');
+          if (oldCurrentSection !== '') {
+            $('#SidebarBadge' + oldCurrentSection).animate(defaultCSS, 500);
+            $('#SidebarBadge' + oldCurrentSection).css('background', '#222');
+          }
+        }
+        setActiveSection('Home', '');
+
         $(window).scroll(() => {
+          // Navbar
           if ( $(window).scrollTop() < $("#Home").height() - $('#Navbar').height() - 10) {
             $('#Navbar').hide();
           } else {
             $('#Navbar').show();
           }
+
+          // Sidebar
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          $('#SidebarProgress').css('height', scrolled + "%");
+
+          if ($(window).scrollTop() <= homeBottom - 65) {
+            newCurrenSection = 'Home';
+          } else if ($(window).scrollTop() > homeBottom - 65 && $(window).scrollTop() <= workingExpBottom - 65) {
+            newCurrenSection = 'WorkingExp';
+          } else if ($(window).scrollTop() > workingExpBottom - 65 && $(window).scrollTop() <= skillsBottom - 65) {
+            newCurrenSection = 'Skills';
+          } else if ($(window).scrollTop() > skillsBottom - 65 && $(window).scrollTop() <= educationBottom - 65) {
+            newCurrenSection = 'Education';
+          } else if ($(window).scrollTop() > educationBottom - 65 && $(window).scrollTop() < bodyHeight - windowHeight) {
+            newCurrenSection = 'Achievements';
+          } else if ($(window).scrollTop() >= bodyHeight - windowHeight) {
+            newCurrenSection = 'QuickBio';
+          } else {
+            newCurrenSection = '';
+          }
+
+          console.log(newCurrenSection, currentSection)
+          if (newCurrenSection !== currentSection) {
+            setActiveSection(newCurrenSection, currentSection);
+            currentSection = newCurrenSection;
+          }
         });
+
+        $(window).resize(function(){location.reload();});
       });
     </script>
   </body>
