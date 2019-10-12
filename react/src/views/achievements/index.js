@@ -1,26 +1,22 @@
 // React
 import React from 'react';
-import PropTypes from 'prop-types';
+import Fade from 'react-reveal/Fade';
 
 // Style
 import {
-  BackgroundDiv,
-  Container,
-  Title
+    BackgroundDiv,
+    Container,
+    Title
 } from './style';
 
-const Achievements = () => {
-  return (
+const Achievements = () => (
     <BackgroundDiv id="Achievements">
-      <Container>
-        <Title>Achievements</Title>
-      </Container>
+        <Container>
+            <Fade>
+                <Title>Achievements</Title>
+            </Fade>
+        </Container>
     </BackgroundDiv>
-  );
-}
-
-Achievements.propTypes = {
-  lang: PropTypes.node,
-}
+);
 
 export default Achievements;

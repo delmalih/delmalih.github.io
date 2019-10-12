@@ -1,5 +1,6 @@
 // React
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 // Local
 import ListEvents from "./components/listEvents.component";
@@ -16,10 +17,12 @@ import {
 const Education = () => (
     <BackgroundDiv id="Education">
         <Container>
-            <Title>Education</Title>
-            <ContentDiv>
-                <ListEvents events={events} />
-            </ContentDiv>
+            <Fade>
+                <Title>Education</Title>
+                <ContentDiv>
+                    <ListEvents events={events} />
+                </ContentDiv>
+            </Fade>
         </Container>
     </BackgroundDiv>
 );
