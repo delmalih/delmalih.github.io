@@ -1,6 +1,6 @@
 {
     "short_name": "My Resume",
-    "name": "David El MaliV",
+    "name": "David El Malih",
     "icons": [
       {
         "src": "images/logo.png",
@@ -13,4 +13,3 @@
     "theme_color": "#000000",
     "background_color": "#ffffff"
   }
-  
