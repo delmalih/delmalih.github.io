@@ -1,6 +1,9 @@
 // React
 import React from 'react';
 
+// Local
+import resumePDF from './resume.pdf';
+
 // Style
 import {
     BackgroundDiv,
@@ -36,6 +39,7 @@ const BigBackground = () => (
             <Icons>
                 <Fa name='linkedin' onClick={() => window.open("https://www.linkedin.com/in/elmalihd/", "_blank")} />
                 <Fa name='github' onClick={() => window.open("https://github.com/delmalih", "_blank")} />
+                <Fa name='file' onClick={() => window.open(resumePDF, "_blank")} />
             </Icons>
             <DownButton onClick={scrollFunc}>
                 <RotateFa name="chevron-right" />
