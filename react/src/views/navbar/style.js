@@ -34,7 +34,7 @@ export const Items = styled('div', () => ({
 
 export const NavItem = styled('div', () => ({
   color: '#E0E1E1',
-  fontSize: '16px',
+  fontSize: '20px',
   cursor: 'pointer',
   padding: '20px',
   ':hover': {
