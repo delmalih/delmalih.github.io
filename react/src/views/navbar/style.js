@@ -9,17 +9,13 @@ export const Navbar = styled('div', () => ({
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: '0px 0px, 38% 50%',
-  '-moz-box-shadow': '0px 2px 5px 0px #343434',
-  '-webkit-box-shadow': '0px 2px 5px 0px #343434',
-  '-o-box-shadow': '0px 2px 5px 0px #343434',
-  'box-shadow': '0px 2px 5px 0px #343434',
   zIndex: '1000',
 }));
 
 export const Container = styled('div', () => ({
   display: 'flex',
   alignItems: 'center',
-  width: '80%',
+  width: '90%',
   height: '100%',
   marginLeft: '10%',
 }));
@@ -38,7 +34,7 @@ export const Items = styled('div', () => ({
 
 export const NavItem = styled('div', () => ({
   color: '#E0E1E1',
-  fontSize: '25px',
+  fontSize: '16px',
   cursor: 'pointer',
   padding: '20px',
   ':hover': {

@@ -22,15 +22,30 @@ const scrollFunc = elm_id => {
 const NavBar = () => (
     <Navbar id='Navbar'>
         <Container>
+            <NavItem onClick={() => scrollFunc('Home')}>
+                <Fa name='home' />{' '}
+                Home
+            </NavItem>
             <Right>
-                <NavItem onClick={() => scrollFunc('Home')}>
-                <Fa name='home' />
+                <NavItem onClick={() => scrollFunc('WorkingExp')}>
+                    <Fa name='briefcase' />{' '}
+                    Experience
                 </NavItem>
-                <NavItem onClick={() => scrollFunc('Bio')}>
-                <Fa name='file-text-o' />
+                <NavItem onClick={() => scrollFunc('Skills')}>
+                    <Fa name='star' />{' '}
+                    Skills
                 </NavItem>
-                <NavItem onClick={() => scrollFunc('Contact')}>
-                <Fa name='envelope-o' />
+                <NavItem onClick={() => scrollFunc('Education')}>
+                    <Fa name='graduation-cap' />{' '}
+                    Education
+                </NavItem>
+                <NavItem onClick={() => scrollFunc('Achievements')}>
+                    <Fa name='trophy' />{' '}
+                    Achievements
+                </NavItem>
+                <NavItem onClick={() => scrollFunc('QuickBio')}>
+                    <Fa name='info-circle' />{' '}
+                    Personnal informations
                 </NavItem>
             </Right>
         </Container>

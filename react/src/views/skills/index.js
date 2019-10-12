@@ -1,6 +1,5 @@
 // React
 import React from 'react';
-import { Card } from 'reactstrap';
 
 // Style
 import {
