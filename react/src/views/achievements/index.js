@@ -1,6 +1,5 @@
 // React
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 
 // Local
 import Achievement from './components/achievement.component';
@@ -20,23 +19,21 @@ import {
 const Achievements = () => (
     <BackgroundDiv id="Achievements">
         <Container>
-            <Fade>
-                <Title>Achievements</Title>
-                <ToastRow>
-                {
-                    achievements.map((achievement, key) => (
-                        <ToastCol lg={3} md={4} sm={6} xs={12} key={key}>
-                            <Achievement
-                                title={achievement.title}
-                                imageSrc={achievement.imageSrc}
-                                content={achievement.content}
-                                results={achievement.results}
-                            />
-                        </ToastCol>
-                    ))
-                }
-                </ToastRow>
-            </Fade>
+            <Title>Achievements</Title>
+            <ToastRow>
+            {
+                achievements.map((achievement, key) => (
+                    <ToastCol lg={3} md={4} sm={6} xs={12} key={key}>
+                        <Achievement
+                            title={achievement.title}
+                            imageSrc={achievement.imageSrc}
+                            content={achievement.content}
+                            results={achievement.results}
+                        />
+                    </ToastCol>
+                ))
+            }
+            </ToastRow>
         </Container>
     </BackgroundDiv>
 );

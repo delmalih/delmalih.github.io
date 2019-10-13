@@ -13,12 +13,14 @@ export const ProgressContainer = styled('div', () => ({
     width: '8px',
     height: '100%',
     background: '#ccc',
+    borderRadius: '10px',
 }));
 
 export const ProgressBar = styled('div', () => ({
     width: '8px',
     height: '0',
     background: '#17a2b8',
+    borderRadius: '10px',
 }));
 
 export const Badge = styled('div', () => ({

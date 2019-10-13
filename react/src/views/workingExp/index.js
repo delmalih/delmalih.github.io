@@ -1,6 +1,5 @@
 // React
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 
 // Local
 import ListEvents from "./components/listEvents.component";
@@ -17,12 +16,10 @@ import {
 const WorkingExp = () => (
     <BackgroundDiv id="WorkingExp">
         <Container>
-            <Fade>
-                <Title>Experience</Title>
-                <ContentDiv>
-                    <ListEvents events={events} />
-                </ContentDiv>
-            </Fade>
+            <Title>Experience</Title>
+            <ContentDiv>
+                <ListEvents events={events} />
+            </ContentDiv>
         </Container>
     </BackgroundDiv>
 );
