@@ -1,61 +1,58 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/images/logo.png"><meta name="Description" content="Student at CentraleSupelec | Web and Mobile developer | Data Scientist"><meta name="keywords" content="data science, deep learning, learning, centrale, centralesupelec, machine learning, IA, david, elmalih, el malih, elmaleh, web, mobile, developer, react, react native, JS, javascript, python, keras, tensorflow, scikit, scikit learn, Java, student, resume"><meta name="Author" content="David El Malih"><meta name="Copyright" content="David El Malih © Copyright 2019"/><meta name="Identifier-URL" content="http://delmalih.github.io"><meta name="Location" content="PARIS, FRANCE"><title>David El Malih</title><style>html{background-attachment:scroll!important}#root,body,html{background-color:#e0e1e1}@media screen and (max-width:1439px){#Sidebar{display:none!important}}</style><link href="/static/css/main.5296d2a7.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script><script type="text/javascript">$(function() {
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/images/logo.png"><meta name="Description" content="Student at CentraleSupelec | Web and Mobile developer | Data Scientist"><meta name="keywords" content="data science, deep learning, learning, centrale, centralesupelec, machine learning, IA, david, elmalih, el malih, elmaleh, web, mobile, developer, react, react native, JS, javascript, python, keras, tensorflow, scikit, scikit learn, Java, student, resume"><meta name="Author" content="David El Malih"><meta name="Copyright" content="David El Malih © Copyright 2019"/><meta name="Identifier-URL" content="http://delmalih.github.io"><meta name="Location" content="PARIS, FRANCE"><title>David El Malih</title><style>html{background-attachment:scroll!important}#root,body,html{background-color:#e0e1e1}@media screen and (max-width:1439px){#Sidebar{display:none!important}}</style><link href="/static/css/1.d72f08b0.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script><script type="text/javascript">$(function() {
         // Navbar hiding
         $('#Navbar').hide();
 
         // general consts
-        var bodyHeight = $('body').height();
-        var windowHeight = $(window).height();
-        var sidebarTop = $('#Sidebar').offset().top;
-        var homeBottom = $('#Home').offset().top + $('#Home').height();
-        var workingExpBottom = $('#WorkingExp').offset().top + $('#WorkingExp').height();
-        var skillsBottom = $('#Skills').offset().top + $('#Skills').height();
-        var educationBottom = $('#Education').offset().top + $('#Education').height();
-        var achievementsBottom = $('#Achievements').offset().top + $('#Achievements').height();
-        var currentSection = 'Home';
-        var newCurrenSection = currentSection;
+        // var bodyHeight = $('body').height();
+        // var windowHeight = $(window).height();
+        // var sidebarTop = $('#Sidebar').offset().top;
+        
+        // var homeBottom = $('#Home').offset().top + $('#Home').height();
+        // var workingExpBottom = $('#WorkingExp').offset().top + $('#WorkingExp').height();
+        // var skillsBottom = $('#Skills').offset().top + $('#Skills').height();
+        // var educationBottom = $('#Education').offset().top + $('#Education').height();
+        // var achievementsBottom = $('#Achievements').offset().top + $('#Achievements').height();
+        
+        // var currentSection = 'Home';
+        // var newCurrenSection = currentSection;
 
         // Home badge
-        var homeTop = $('#Home').offset().top;
-        var badgeHomeTop = homeTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
-        $('#SidebarBadgeHome').css({top: badgeHomeTop});
+        // var homeTop = $('#Home').offset().top;
+        // var badgeHomeTop = homeTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        // $('#SidebarBadgeHome').css({top: badgeHomeTop});
 
         // WorkingExp badge
-        var workingExpTop = $('#WorkingExp').offset().top;
-        var badgeWorkingExpTop = workingExpTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
-        $('#SidebarBadgeWorkingExp').css({top: badgeWorkingExpTop});
+        // var workingExpTop = $('#WorkingExp').offset().top;
+        // var badgeWorkingExpTop = workingExpTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        // $('#SidebarBadgeWorkingExp').css({top: badgeWorkingExpTop});
 
         // Skills badge
-        var skillsTop = $('#Skills').offset().top;
-        var badgeSkillsTop = skillsTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
-        $('#SidebarBadgeSkills').css({top: badgeSkillsTop});
+        // var skillsTop = $('#Skills').offset().top;
+        // var badgeSkillsTop = skillsTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        // $('#SidebarBadgeSkills').css({top: badgeSkillsTop});
 
         // Education badge
-        var educationTop = $('#Education').offset().top;
-        var badgeEducationTop = educationTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
-        $('#SidebarBadgeEducation').css({top: badgeEducationTop});
+        // var educationTop = $('#Education').offset().top;
+        // var badgeEducationTop = educationTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        // $('#SidebarBadgeEducation').css({top: badgeEducationTop});
 
         // Achievements badge
-        var achievementsTop = $('#Achievements').offset().top;
-        var badgeAchievementsTop = achievementsTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
-        $('#SidebarBadgeAchievements').css({top: badgeAchievementsTop});
-
-        // quickBio badge
-        var quickBioTop = $('#QuickBio').offset().top;
-        var badgeQuickBioTop = quickBioTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
-        $('#SidebarBadgeQuickBio').css({top: badgeQuickBioTop});
+        // var achievementsTop = $('#Achievements').offset().top;
+        // var badgeAchievementsTop = achievementsTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
+        // $('#SidebarBadgeAchievements').css({top: badgeAchievementsTop});
 
         // Functions
-        function setActiveSection(newCurrenSection, oldCurrentSection) {
-          var activeCss = { fontSize: '14px' }
-          var defaultCSS = { fontSize: '10px' };
-          $('#SidebarBadge' + newCurrenSection).animate(activeCss, 500);
-          $('#SidebarBadge' + newCurrenSection).css('background', '#17a2b8');
-          if (oldCurrentSection !== '') {
-            $('#SidebarBadge' + oldCurrentSection).animate(defaultCSS, 500);
-            $('#SidebarBadge' + oldCurrentSection).css('background', '#222');
-          }
-        }
-        setActiveSection('Home', '');
+        // function setActiveSection(newCurrenSection, oldCurrentSection) {
+        //   var activeCss = { fontSize: '14px' }
+        //   var defaultCSS = { fontSize: '10px' };
+        //   $('#SidebarBadge' + newCurrenSection).animate(activeCss, 500);
+        //   $('#SidebarBadge' + newCurrenSection).css('background', '#17a2b8');
+        //   if (oldCurrentSection !== '') {
+        //     $('#SidebarBadge' + oldCurrentSection).animate(defaultCSS, 500);
+        //     $('#SidebarBadge' + oldCurrentSection).css('background', '#222');
+        //   }
+        // }
+        // setActiveSection('Home', '');
 
         $(window).scroll(() => {
           // Navbar
@@ -66,33 +63,29 @@
           }
 
           // Sidebar
-          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          var scrolled = (winScroll / height) * 100;
-          $('#SidebarProgress').css('height', scrolled + "%");
+          // var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          // var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          // var scrolled = (winScroll / height) * 100;
+          // $('#SidebarProgress').css('height', scrolled + "%");
 
-          if ($(window).scrollTop() <= homeBottom - 65) {
-            newCurrenSection = 'Home';
-          } else if ($(window).scrollTop() > homeBottom - 65 && $(window).scrollTop() <= workingExpBottom - 65) {
-            newCurrenSection = 'WorkingExp';
-          } else if ($(window).scrollTop() > workingExpBottom - 65 && $(window).scrollTop() <= skillsBottom - 65) {
-            newCurrenSection = 'Skills';
-          } else if ($(window).scrollTop() > skillsBottom - 65 && $(window).scrollTop() <= educationBottom - 65) {
-            newCurrenSection = 'Education';
-          } else if ($(window).scrollTop() > educationBottom - 65 && $(window).scrollTop() < bodyHeight - windowHeight) {
-            newCurrenSection = 'Achievements';
-          } else if ($(window).scrollTop() >= bodyHeight - windowHeight) {
-            newCurrenSection = 'QuickBio';
-          } else {
-            newCurrenSection = '';
-          }
+          // if ($(window).scrollTop() <= homeBottom - 65) {
+          //   newCurrenSection = 'Home';
+          // } else if ($(window).scrollTop() > homeBottom - 65 && $(window).scrollTop() <= workingExpBottom - 65) {
+          //   newCurrenSection = 'WorkingExp';
+          // } else if ($(window).scrollTop() > workingExpBottom - 65 && $(window).scrollTop() <= skillsBottom - 65) {
+          //   newCurrenSection = 'Skills';
+          // } else if ($(window).scrollTop() > skillsBottom - 65 && $(window).scrollTop() <= educationBottom - 65) {
+          //   newCurrenSection = 'Education';
+          // } else if ($(window).scrollTop() > educationBottom - 65) {
+          //   newCurrenSection = 'Achievements';
+          // } else {
+          //   newCurrenSection = '';
+          // }
 
-          console.log(newCurrenSection, currentSection)
-          if (newCurrenSection !== currentSection) {
-            setActiveSection(newCurrenSection, currentSection);
-            currentSection = newCurrenSection;
-          }
+          // if (newCurrenSection !== currentSection) {
+          //   setActiveSection(newCurrenSection, currentSection);
+          //   currentSection = newCurrenSection;
+          // }
         });
 
-        $(window).resize(function(){location.reload();});
-      });</script><script type="text/javascript" src="/static/js/main.0fa6c327.js"></script></body></html>
+      });</script><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/1.1997ee72.chunk.js"></script><script src="/static/js/main.873105a2.chunk.js"></script></body></html>
