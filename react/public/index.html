@@ -42,11 +42,13 @@
         var bodyHeight = $('body').height();
         var windowHeight = $(window).height();
         var sidebarTop = $('#Sidebar').offset().top;
+        
         var homeBottom = $('#Home').offset().top + $('#Home').height();
         var workingExpBottom = $('#WorkingExp').offset().top + $('#WorkingExp').height();
         var skillsBottom = $('#Skills').offset().top + $('#Skills').height();
         var educationBottom = $('#Education').offset().top + $('#Education').height();
         var achievementsBottom = $('#Achievements').offset().top + $('#Achievements').height();
+        
         var currentSection = 'Home';
         var newCurrenSection = currentSection;
 
@@ -74,11 +76,6 @@
         var achievementsTop = $('#Achievements').offset().top;
         var badgeAchievementsTop = achievementsTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
         $('#SidebarBadgeAchievements').css({top: badgeAchievementsTop});
-
-        // quickBio badge
-        var quickBioTop = $('#QuickBio').offset().top;
-        var badgeQuickBioTop = quickBioTop / bodyHeight * (0.9 * windowHeight) + sidebarTop;
-        $('#SidebarBadgeQuickBio').css({top: badgeQuickBioTop});
 
         // Functions
         function setActiveSection(newCurrenSection, oldCurrentSection) {
@@ -115,22 +112,18 @@
             newCurrenSection = 'Skills';
           } else if ($(window).scrollTop() > skillsBottom - 65 && $(window).scrollTop() <= educationBottom - 65) {
             newCurrenSection = 'Education';
-          } else if ($(window).scrollTop() > educationBottom - 65 && $(window).scrollTop() < bodyHeight - windowHeight) {
+          } else if ($(window).scrollTop() > educationBottom - 65) {
             newCurrenSection = 'Achievements';
-          } else if ($(window).scrollTop() >= bodyHeight - windowHeight) {
-            newCurrenSection = 'QuickBio';
           } else {
             newCurrenSection = '';
           }
 
-          console.log(newCurrenSection, currentSection)
           if (newCurrenSection !== currentSection) {
             setActiveSection(newCurrenSection, currentSection);
             currentSection = newCurrenSection;
           }
         });
 
-        $(window).resize(function(){location.reload();});
       });
     </script>
   </body>

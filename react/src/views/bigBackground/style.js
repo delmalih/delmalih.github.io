@@ -1,6 +1,6 @@
 // React requirement
 import { styled } from 'styletron-react';
-import { Container } from 'reactstrap';
+import { Container, Row as R, Col as C } from 'reactstrap';
 import FA from 'react-fontawesome';
 
 export const BackgroundDiv = styled('div', () => ({
@@ -103,4 +103,15 @@ export const DownButton = styled('div', () => ({
 
 export const RotateFa = styled(FA, () => ({
   transform: 'rotate(45deg)',
+}));
+
+export const InfoRow = styled(R, () => ({
+  marginTop: '15px',
+  marginBottom: '30px',
+  "@media screen and (max-width: 1440px)": { width: '70%' },
+  "@media screen and (max-width: 980px)": { width: '100%' },
+}));
+
+export const InfoCol = styled(C, () => ({
+  textAlign: 'center',
 }));

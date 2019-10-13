@@ -26,7 +26,6 @@ const SideBar = () => (
             <Badge onClick={() => scrollFunc("Skills")} id="SidebarBadgeSkills">Skills</Badge>
             <Badge onClick={() => scrollFunc("Education")} id="SidebarBadgeEducation">Education</Badge>
             <Badge onClick={() => scrollFunc("Achievements")} id="SidebarBadgeAchievements">Achievements</Badge>
-            <Badge onClick={() => scrollFunc("QuickBio")} id="SidebarBadgeQuickBio">Infos</Badge>
             <ProgressBar id="SidebarProgress" />
         </ProgressContainer>
     </Sidebar>
