@@ -6,8 +6,8 @@ import Fa from 'react-fontawesome';
 import {
     Navbar,
     Container,
-    Right,
     NavItem,
+    NavbarPlaceholder,
 } from './style';
 
 const scrollFunc = elm_id => {
@@ -20,30 +20,33 @@ const scrollFunc = elm_id => {
 }
 
 const NavBar = () => (
-    <Navbar id='Navbar'>
-        <Container>
-            <NavItem onClick={() => scrollFunc('Home')}>
-                <Fa name='home' />
-            </NavItem>
-            <Right>
+    <div>
+        <Navbar>
+            <Container>
+                <NavItem onClick={() => scrollFunc('Home')}>
+                    <Fa name='home' />
+                    <span style={{ marginLeft: '5px' }} className='hideMobile'>Home</span>
+                </NavItem>
                 <NavItem onClick={() => scrollFunc('WorkingExp')}>
                     <Fa name='briefcase' />
+                    <span style={{ marginLeft: '5px' }} className='hideMobile'>Experience</span>
                 </NavItem>
                 <NavItem onClick={() => scrollFunc('Skills')}>
                     <Fa name='star' />
+                    <span style={{ marginLeft: '5px' }} className='hideMobile'>Skills</span>
                 </NavItem>
                 <NavItem onClick={() => scrollFunc('Education')}>
                     <Fa name='graduation-cap' />
+                    <span style={{ marginLeft: '5px' }} className='hideMobile'>Education</span>
                 </NavItem>
                 <NavItem onClick={() => scrollFunc('Achievements')}>
                     <Fa name='trophy' />
+                    <span style={{ marginLeft: '5px' }} className='hideMobile'>Achievements</span>
                 </NavItem>
-                <NavItem onClick={() => scrollFunc('QuickBio')}>
-                    <Fa name='info-circle' />
-                </NavItem>
-            </Right>
-        </Container>
-    </Navbar>
+            </Container>
+        </Navbar>
+        <NavbarPlaceholder />
+    </div>
 );
 
 export default NavBar;

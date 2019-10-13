@@ -15,20 +15,9 @@ import {
     SubName,
     Icons,
     Fa,
-    DownButton,
-    RotateFa,
     InfoRow,
     InfoCol,
 } from './style';
-
-const scrollFunc = () => {
-    const elm = document.getElementById('WorkingExp');
-    window.scrollTo({
-        top: elm.offsetTop - 60,
-        left: 0,
-        behavior: 'smooth',
-    });
-}
 
 const BigBackground = () => (
     <BackgroundDiv id="Home">
@@ -58,9 +47,6 @@ const BigBackground = () => (
                 <Fa name='github' onClick={() => window.open("https://github.com/delmalih", "_blank")} />
                 <Fa name='file' onClick={() => window.open(resumePDF, "_blank")} />
             </Icons>
-            <DownButton onClick={scrollFunc}>
-                <RotateFa name="chevron-right" />
-            </DownButton>
         </CenterDiv>
     </BackgroundDiv>
 );

@@ -54,7 +54,7 @@ export const Icons = styled('div', () => ({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'center',
-  marginTop: '15px',
+  marginTop: '0',
   marginBottom: '30px',
 }));
 
@@ -107,7 +107,7 @@ export const RotateFa = styled(FA, () => ({
 
 export const InfoRow = styled(R, () => ({
   marginTop: '15px',
-  marginBottom: '30px',
+  marginBottom: '15px',
   "@media screen and (max-width: 1440px)": { width: '70%' },
   "@media screen and (max-width: 980px)": { width: '100%' },
 }));
