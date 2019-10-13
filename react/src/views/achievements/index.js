@@ -20,7 +20,7 @@ const Achievements = () => (
     <BackgroundDiv id="Achievements">
         <Container>
             <Title>Achievements</Title>
-            <ToastRow>
+            {/* <ToastRow>
             {
                 achievements.map((achievement, key) => (
                     <ToastCol lg={3} md={4} sm={6} xs={12} key={key}>
@@ -33,7 +33,7 @@ const Achievements = () => (
                     </ToastCol>
                 ))
             }
-            </ToastRow>
+            </ToastRow> */}
         </Container>
     </BackgroundDiv>
 );
