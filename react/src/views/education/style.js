@@ -1,6 +1,7 @@
 // React requirement
 import { styled } from 'styletron-react';
-import { Container as Cont, Media as M } from 'reactstrap';
+import { Container as Cont, Badge as B } from 'reactstrap';
+import { VerticalTimeline as VT, VerticalTimelineElement as VTE }  from 'react-vertical-timeline-component';
 
 export const BackgroundDiv = styled('div', () => ({
   backgroundColor: '#E0E1E1',
@@ -30,60 +31,30 @@ export const Title = styled('div', () => ({
   justifyContent: 'center',
 }));
 
-export const ContentDiv = styled('div', () => ({
-  padding: '20px',
-  fontSize: '20px',
-  color: '#222',
-  backgroundColor: 'white',
-  borderRadius: '3px',
-  boxShadow: '0px 0px 100px -25px rgba(0, 0, 0, 0.75)',
-  '-webkit-box-shadow': '0px 0px 100px -25px rgba(0, 0, 0, 0.75)',
-  '-moz-box-shadow': '0px 0px 100px -25px rgba(0, 0, 0, 0.75)',
+export const VerticalTimeline = styled(VT, () => ({
+
 }));
 
-export const Item = styled('div', () => ({
-  display: 'flex',
-  flex: '1',
-  flexDirection: 'row',
-  alignItems: 'center',
+export const VerticalTimelineElement = styled(VTE, () => ({
+
 }));
 
-export const ItemIcon = styled('div', () => ({
-  display: 'flex',
-  flex: '0.1',
-  alignItems: 'center',
-  justifyContent: 'center',
+export const VerticalTimelineTitle = styled('h3', () => ({
+  fontSize: '1.25em',
+  fontWeight: 'bold',
 }));
 
-export const ItemContent = styled('div', () => ({
-  display: 'flex',
-  flex: '0.9',
+export const VerticalTimelineSubTitle = styled('h4', () => ({
+  fontSize: '1.0em',
+  fontWeight: 'bold',
 }));
 
-export const Lang = styled('div', () => ({
-  marginLeft: '30px',
-  marginTop: '20px',
+export const BadgeContainer = styled('div', () => ({
+  marginBottom: '10px',
 }));
 
-export const LangTitle = styled('span', () => ({
-  fontSize: '18px',
-}));
-
-export const Period = styled('div', () => ({
-  color: "#17A2B8",
-  fontSize: '18px',
-}));
-
-export const Description = styled('div', () => ({
-  marginTop: '5px',
-  marginBottom: '0',
-  fontSize: '18px',
-  color: "#222",
-}));
-
-export const Media = styled(M, props => ({
-  width: props.object ? '100px' : 'auto',
-  height: props.object ? '100px' : 'auto',
-  fontSize: props.heading ? '20px' : '18px',
-  marginLeft: props.heading ? '10px' : '0',
+export const Badge = styled(B, () => ({
+  marginLeft: '2px',
+  marginRight: '2px',
+  padding: '5px',
 }));

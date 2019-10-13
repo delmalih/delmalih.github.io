@@ -10,16 +10,13 @@ import {
     BackgroundDiv,
     Container,
     Title,
-    ContentDiv,
 } from './style';
 
 const Education = () => (
     <BackgroundDiv id="Education">
         <Container>
             <Title>Education</Title>
-            <ContentDiv>
-                <ListEvents events={events} />
-            </ContentDiv>
+            <ListEvents events={events} />
         </Container>
     </BackgroundDiv>
 );

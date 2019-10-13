@@ -3,7 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ShowMore from 'react-show-more';
 
-
 // Style
 import {
     VerticalTimeline,
