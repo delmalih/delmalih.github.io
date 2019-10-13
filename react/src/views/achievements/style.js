@@ -1,6 +1,6 @@
 // React requirement
 import { styled } from 'styletron-react';
-import { Container as Cont } from 'reactstrap';
+import { Container as Cont, Row, Col } from 'reactstrap';
 
 export const BackgroundDiv = styled('div', () => ({
   minHeight: '40vh',
@@ -26,4 +26,14 @@ export const Title = styled('div', () => ({
   flexDirection: 'column',
   alinItems: 'center',
   justifyContent: 'center',
+}));
+
+export const ToastRow = styled(Row, () => ({
+
+}));
+
+export const ToastCol = styled(Col, () => ({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'flex-start',
 }));
