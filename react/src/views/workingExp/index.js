@@ -15,11 +15,9 @@ import {
 
 const WorkingExp = () => (
     <BackgroundDiv id="WorkingExp">
-        <Container>
+        <Container fluid>
             <Title>Experience</Title>
-            <ContentDiv>
-                <ListEvents events={events} />
-            </ContentDiv>
+            <ListEvents events={events} />
         </Container>
     </BackgroundDiv>
 );

@@ -9,6 +9,7 @@ import { StyletronProvider } from 'styletron-react';
 // Layout
 import 'bootstrap/dist/css/bootstrap.css'; // Bootstrap
 import 'font-awesome/css/font-awesome.css'; // FontAwesome
+import 'react-vertical-timeline-component/style.min.css'; // Vertical Timeline
 
 // Local
 import Home from './views/';
