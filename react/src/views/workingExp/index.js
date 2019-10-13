@@ -10,7 +10,6 @@ import {
     BackgroundDiv,
     Container,
     Title,
-    ContentDiv,
 } from './style';
 
 const WorkingExp = () => (
