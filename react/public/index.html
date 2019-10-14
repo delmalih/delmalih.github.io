@@ -32,5 +32,50 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script>
+    <script type='text/javascript'>
+      $(function() {
+        // general consts
+        function getElementIdBottom(id) { return $('#'+id).offset().top + $('#'+id).height(); } 
+        var homeBottom = $('#Home').height();
+        var workingExpBottom = homeBottom + $('#WorkingExp').height();
+        var skillsBottom = workingExpBottom + $('#Skills').height();
+        var educationBottom = skillsBottom + $('#Education').height();
+        var achievementsBottom = educationBottom + $('#Achievements').height();
+        var currentSection = 'Home';
+        var newCurrenSection = currentSection;
+
+        // Functions
+        function setActiveSection(newCurrenSection, oldCurrentSection) {
+          $('#Menu' + newCurrenSection).css('background', 'rgba(224, 225, 225, 0.1)');
+          if (oldCurrentSection !== '') {
+            $('#Menu' + oldCurrentSection).css('background', 'transparent');
+          }
+        }
+        setActiveSection('Home', '');
+
+        $(window).scroll(() => {
+          if ($(window).scrollTop() + 20 <= homeBottom) {
+            newCurrenSection = 'Home';
+          } else if ($(window).scrollTop() + 20 > homeBottom && $(window).scrollTop() + 20 <= workingExpBottom) {
+            newCurrenSection = 'WorkingExp';
+          } else if ($(window).scrollTop() + 20 > workingExpBottom && $(window).scrollTop() + 20 <= skillsBottom) {
+            newCurrenSection = 'Skills';
+          } else if ($(window).scrollTop() + 20 > skillsBottom && $(window).scrollTop() + 20 <= educationBottom) {
+            newCurrenSection = 'Education';
+          } else if ($(window).scrollTop() + 20 > educationBottom) {
+            newCurrenSection = 'Achievements';
+          } else {
+            newCurrenSection = '';
+          }
+
+          if (newCurrenSection !== currentSection) {
+            setActiveSection(newCurrenSection, currentSection);
+            currentSection = newCurrenSection;
+          }
+        });
+
+      });
+    </script>
   </body>
 </html>

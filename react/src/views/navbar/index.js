@@ -13,7 +13,7 @@ import {
 const scrollFunc = elm_id => {
     const elm = document.getElementById(elm_id);
     window.scroll({
-        top: elm.offsetTop - 60,
+        top: elm.offsetTop,
         left: 0,
         behavior: 'smooth',
     });
@@ -23,23 +23,23 @@ const NavBar = () => (
     <div>
         <Navbar>
             <Container>
-                <NavItem onClick={() => scrollFunc('Home')}>
+                <NavItem id='MenuHome' onClick={() => scrollFunc('Home')}>
                     <Fa name='home' />
                     <span style={{ marginLeft: '5px' }} className='hideMobile'>Home</span>
                 </NavItem>
-                <NavItem onClick={() => scrollFunc('WorkingExp')}>
+                <NavItem id='MenuWorkingExp' onClick={() => scrollFunc('WorkingExp')}>
                     <Fa name='briefcase' />
                     <span style={{ marginLeft: '5px' }} className='hideMobile'>Experience</span>
                 </NavItem>
-                <NavItem onClick={() => scrollFunc('Skills')}>
+                <NavItem id='MenuSkills' onClick={() => scrollFunc('Skills')}>
                     <Fa name='star' />
                     <span style={{ marginLeft: '5px' }} className='hideMobile'>Skills</span>
                 </NavItem>
-                <NavItem onClick={() => scrollFunc('Education')}>
+                <NavItem id='MenuEducation' onClick={() => scrollFunc('Education')}>
                     <Fa name='graduation-cap' />
                     <span style={{ marginLeft: '5px' }} className='hideMobile'>Education</span>
                 </NavItem>
-                <NavItem onClick={() => scrollFunc('Achievements')}>
+                <NavItem id='MenuAchievements' onClick={() => scrollFunc('Achievements')}>
                     <Fa name='trophy' />
                     <span style={{ marginLeft: '5px' }} className='hideMobile'>Achievements</span>
                 </NavItem>

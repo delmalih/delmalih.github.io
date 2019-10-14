@@ -38,7 +38,7 @@ const VTElementIconStyle = {
 };
 
 const ListEvents = props => (
-	<VerticalTimeline>
+	<VerticalTimeline animate={false}>
 		{
 			props.events.map((event, key) => (
 				<VerticalTimelineElement
