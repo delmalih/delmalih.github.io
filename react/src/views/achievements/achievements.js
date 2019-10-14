@@ -1,6 +1,8 @@
 // achievements.js
 import React from 'react';
-import ShowMore from 'react-show-more';
+
+// Local
+import Truncate from './components/truncate.component';
 
 const achievements = [
     {
@@ -9,14 +11,16 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: (
             <div>
                 <b>Results :</b><br />
-                ONGOING
+                <Truncate lines={1}>
+                    ONGOING
+                </Truncate>
             </div>
         ),
     },
@@ -26,16 +30,16 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: (
             <div>
                 <b>Results :</b><br />
-                <ShowMore lines={1}>
+                <Truncate lines={1}>
                     Categorical accuracy: 90%
-                </ShowMore>
+                </Truncate>
             </div>
         ),
     },
@@ -45,15 +49,15 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: (
-            <div>
+            <div style={{width: '100%'}}>
                 <b>Results :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
     },
@@ -63,16 +67,16 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: (
             <div>
                 <b>Results :</b><br />
-                <ShowMore lines={1}>
+                <Truncate lines={1}>
                     Pixel accuracy: 98%
-                </ShowMore>
+                </Truncate>
             </div>
         ),
     },
@@ -82,22 +86,22 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
+                <Truncate lines={1}>
                     <span>Development of a software for anomaly detection from given daily logs on a subway line</span>
                     <br /><br />
                     <span>Unsupervised pattern recognition in unstructured log-data</span>
-                </ShowMore>
+                </Truncate>
             </div>
         ),
         results: (
             <div>
                 <b>Results :</b><br />
-                <ShowMore lines={1}>
+                <Truncate lines={1}>
                     <ul>
                         <li>LSTM Top-5 Accuracy: 99.94 %</li>
                         <li>Turnkey software for future anomaly detection</li>
                     </ul>
-                </ShowMore>
+                </Truncate>
             </div>
         ),
     },
@@ -107,8 +111,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -119,8 +123,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -131,8 +135,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -143,8 +147,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -155,8 +159,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -167,8 +171,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -179,8 +183,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -191,8 +195,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -203,11 +207,11 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
+                <Truncate lines={1}>
                     <span>Creation of a motorized stroller that does not need to be pushed</span>
                     <br /><br />
                     <span>The stroller follows the person automatically without contact</span>
-                </ShowMore>
+                </Truncate>
             </div>
         ),
         results: "TODO",
@@ -218,8 +222,8 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <ShowMore lines={1}>
-                </ShowMore>
+                <Truncate lines={1}>
+                </Truncate>
             </div>
         ),        
         results: "TODO",

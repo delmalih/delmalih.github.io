@@ -2,7 +2,6 @@
 import { styled } from 'styletron-react';
 import {
     Toast as T,
-    ToastHeader as THeader,
     ToastBody as TBody,
 } from 'reactstrap';
 
@@ -11,11 +10,7 @@ export const Toast = styled(T, () => ({
     marginBottom: '10px',
     width: '100%',
     display: 'flex',
-    ':hover': {
-        // boxShadow: '0 0 0 1px #d4d4d5, 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15)',
-        // '-webkit-box-shadow': '0 0 0 1px #d4d4d5, 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15)',
-        // '-moz-box-shadow': '0 0 0 1px #d4d4d5, 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15)',
-    },
+    borderRadius: '15px',
 }));
 
 export const ToastImgContainer = styled('div', () => ({
@@ -50,6 +45,9 @@ export const ToastBody = styled(TBody, () => ({
     color: '#222',
 }));
 
-export const ToastFooter = styled(THeader, () => ({
+export const ToastFooter = styled('div', () => ({
     color: '#222',
+    fontWeight: 'none',
+    background: 'white',
+    padding: '12px',
 }));
