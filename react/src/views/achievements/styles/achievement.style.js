@@ -33,10 +33,17 @@ export const ToastImg = styled('img', () => ({
     width: 'auto',
 }));
 
-export const ToastHeader = styled(THeader, () => ({
-    fontSize: '20px',
+export const ToastHeader = styled('div', () => ({
+    fontSize: '18px',
     color: '#222',
     textAlign: 'center',
+    height: '80px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: 'white',
+    fontWeight: 'bold',
+    borderTop: '1px solid #222',
 }));
 
 export const ToastBody = styled(TBody, () => ({
