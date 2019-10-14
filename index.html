@@ -1,1 +1,42 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/images/logo.png"><meta name="Description" content="Student at CentraleSupelec | Web and Mobile developer | Data Scientist"><meta name="keywords" content="data science, deep learning, learning, centrale, centralesupelec, machine learning, IA, david, elmalih, el malih, elmaleh, web, mobile, developer, react, react native, JS, javascript, python, keras, tensorflow, scikit, scikit learn, Java, student, resume"><meta name="Author" content="David El Malih"><meta name="Copyright" content="David El Malih © Copyright 2019"/><meta name="Identifier-URL" content="http://delmalih.github.io"><meta name="Location" content="PARIS, FRANCE"><title>David El Malih</title><style>html{background-attachment:scroll!important}#root,body,html{background-color:#e0e1e1}@media screen and (max-width:1439px){.hideMobile{display:none!important}}</style><link href="/static/css/1.d72f08b0.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/1.1997ee72.chunk.js"></script><script src="/static/js/main.c7d415bf.chunk.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/images/logo.png"><meta name="Description" content="Student at CentraleSupelec | Web and Mobile developer | Data Scientist"><meta name="keywords" content="data science, deep learning, learning, centrale, centralesupelec, machine learning, IA, david, elmalih, el malih, elmaleh, web, mobile, developer, react, react native, JS, javascript, python, keras, tensorflow, scikit, scikit learn, Java, student, resume"><meta name="Author" content="David El Malih"><meta name="Copyright" content="David El Malih © Copyright 2019"/><meta name="Identifier-URL" content="http://delmalih.github.io"><meta name="Location" content="PARIS, FRANCE"><title>David El Malih</title><style>html{background-attachment:scroll!important}#root,body,html{background-color:#e0e1e1}@media screen and (max-width:1439px){.hideMobile{display:none!important}}</style><link href="/static/css/1.d72f08b0.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script><script type="text/javascript">$(function() {
+        // general consts
+        function getElementIdBottom(id) { return $('#'+id).offset().top + $('#'+id).height(); } 
+        var homeBottom = $('#Home').height();
+        var workingExpBottom = homeBottom + $('#WorkingExp').height();
+        var skillsBottom = workingExpBottom + $('#Skills').height();
+        var educationBottom = skillsBottom + $('#Education').height();
+        var achievementsBottom = educationBottom + $('#Achievements').height();
+        var currentSection = 'Home';
+        var newCurrenSection = currentSection;
+
+        // Functions
+        function setActiveSection(newCurrenSection, oldCurrentSection) {
+          $('#Menu' + newCurrenSection).css('background', 'rgba(224, 225, 225, 0.1)');
+          if (oldCurrentSection !== '') {
+            $('#Menu' + oldCurrentSection).css('background', 'transparent');
+          }
+        }
+        setActiveSection('Home', '');
+
+        $(window).scroll(() => {
+          if ($(window).scrollTop() + 20 <= homeBottom) {
+            newCurrenSection = 'Home';
+          } else if ($(window).scrollTop() + 20 > homeBottom && $(window).scrollTop() + 20 <= workingExpBottom) {
+            newCurrenSection = 'WorkingExp';
+          } else if ($(window).scrollTop() + 20 > workingExpBottom && $(window).scrollTop() + 20 <= skillsBottom) {
+            newCurrenSection = 'Skills';
+          } else if ($(window).scrollTop() + 20 > skillsBottom && $(window).scrollTop() + 20 <= educationBottom) {
+            newCurrenSection = 'Education';
+          } else if ($(window).scrollTop() + 20 > educationBottom) {
+            newCurrenSection = 'Achievements';
+          } else {
+            newCurrenSection = '';
+          }
+
+          if (newCurrenSection !== currentSection) {
+            setActiveSection(newCurrenSection, currentSection);
+            currentSection = newCurrenSection;
+          }
+        });
+
+      });</script><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/1.2ce32031.chunk.js"></script><script src="/static/js/main.84cc5f8f.chunk.js"></script></body></html>
