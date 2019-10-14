@@ -13,7 +13,12 @@ const achievements = [
                 </ShowMore>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                ONGOING
+            </div>
+        ),
     },
     {
         title: "One-Shot Object Detector",
@@ -25,7 +30,14 @@ const achievements = [
                 </ShowMore>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <ShowMore lines={1}>
+                    Categorical accuracy: 90%
+                </ShowMore>
+            </div>
+        ),
     },
     {
         title: "Horizontal Image Stitching",
@@ -37,7 +49,13 @@ const achievements = [
                 </ShowMore>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <ShowMore lines={1}>
+                </ShowMore>
+            </div>
+        ),
     },
     {
         title: "Shelves Detector",
@@ -49,7 +67,14 @@ const achievements = [
                 </ShowMore>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <ShowMore lines={1}>
+                    Pixel accuracy: 98%
+                </ShowMore>
+            </div>
+        ),
     },
     {
         title: "Unsupervised Anomaly Detection",
@@ -64,7 +89,17 @@ const achievements = [
                 </ShowMore>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <ShowMore lines={1}>
+                    <ul>
+                        <li>LSTM Top-5 Accuracy: 99.94 %</li>
+                        <li>Turnkey software for future anomaly detection</li>
+                    </ul>
+                </ShowMore>
+            </div>
+        ),
     },
     {
         title: "Recruitment Chatbot",
