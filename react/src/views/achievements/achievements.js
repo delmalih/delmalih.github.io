@@ -12,8 +12,8 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Breast cancer detection algorithm on a small database of mammograms (~300 images)</span><br />
-                    <span>Project dedicated to the publication of a scientific article</span>
+                    <span>Breast cancer detection algorithm on a small dataset of mammograms (~300 images).</span><br />
+                    <span>Project dedicated to the publication of a scientific article.</span>
                 </div>
             </div>
         ),
@@ -33,7 +33,7 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Development of an algorithm that could classify images having only a one sample per category.</span><br />
+                    <span>Development of an algorithm that could classify images having only one sample per category.</span><br />
                 </div>
             </div>
         ),
@@ -53,8 +53,8 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Development of an algorithm that could create a panorama of pictures of an aisle of a retail store without distorting the extremities images</span><br />
-                    <span>The standard panorama algorithm of our smartphones could not work because of the distortion of the extremities</span>
+                    <span>Development of an algorithm that could create a panorama from pictures of an aisle of a retail store without distorting the extremities.</span><br />
+                    <span>The standard panorama algorithm of our smartphones could not work because of the distortion.</span>
                 </div>
             </div>
         ),
@@ -198,7 +198,7 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Classifcation algorithm that determines whether images contain either a dog or a cat</span><br />
+                    <span>Classifcation algorithm that determines whether images contain either a dog or a cat.</span><br />
                     <span><b>Kaggle project:</b> <a href="https://www.kaggle.com/c/dogs-vs-cats" target="_blank" rel="noopener noreferrer">kaggle.com/c/dogs-vs-cats</a></span>
                 </div>
             </div>
@@ -219,11 +219,11 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Full stack development of the website <a href="http://my.conduitecenter.fr" rel="noopener noreferrer" target="_blank">http://my.conduitecenter.fr</a> for the ConduiteCenter company, the online driving School</span><br />
-                    <span>• Scheduling courses depending on the availability of instructors and student</span><br />
-                    <span>• Ability to pay for packages online</span><br />
-                    <span>• Editing invoices and automatic contracts</span><br />
-                    <span>• Management of the company's cash flow from the website</span>
+                    <span>Full stack development of the website <a href="http://my.conduitecenter.fr" rel="noopener noreferrer" target="_blank">http://my.conduitecenter.fr</a> for the ConduiteCenter company, the online driving School.</span><br />
+                    <span>• Scheduling courses depending on the availability of instructors and student.</span><br />
+                    <span>• Ability to pay for packages online.</span><br />
+                    <span>• Editing invoices and automatic contracts.</span><br />
+                    <span>• Management of the company's cash flow from the website.</span>
                 </div>
             </div>
         ),
@@ -235,7 +235,7 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Film recommendation algorithm trained on a database of notes that Netflix users (more than 2.5 million users) gave to films (18000 films)</span>
+                    <span>Movie recommendation algorithm trained on a database of notes that Netflix users (more than 2.5 million users) gave to films (18000 films).</span>
                 </div>
             </div>
         ),
@@ -255,8 +255,8 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Creation of a motorized stroller that does not need to be pushed</span><br />
-                    <span>The stroller follows the person automatically without contact</span>
+                    <span>Creation of a motorized stroller that does not need to be pushed.</span><br />
+                    <span>The stroller follows the person automatically without contact.</span>
                 </div>
             </div>
         ),
@@ -268,8 +268,8 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Development of many applications for the TI-Nspire - a graphic calculator developed by Texas Instruments</span><br />
-                    <span>Programs designed to help baccalaureate students solving exercises</span>
+                    <span>Development of many applications for the TI-Nspire - a graphic calculator developed by Texas Instruments.</span><br />
+                    <span>Programs designed to help baccalaureate students solving exercises.</span>
                 </div>
             </div>
         ),        
