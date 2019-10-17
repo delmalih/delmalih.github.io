@@ -22,7 +22,10 @@ const Achievement = props => (
         }
         <ToastHeader>{props.title}</ToastHeader>
         <ToastBody>{props.content}</ToastBody>
-        <ToastFooter>{props.results}</ToastFooter>
+        {
+            props.results &&
+            <ToastFooter>{props.results}</ToastFooter>
+        }
     </Toast>
 );
 

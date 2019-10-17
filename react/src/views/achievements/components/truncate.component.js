@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Truncate from 'react-truncate';
 import PropTypes from 'prop-types';
+import { Button } from 'reactstrap';
 
 class CustomTruncate extends Component {
     constructor(props) {
@@ -49,13 +50,13 @@ class CustomTruncate extends Component {
             <div>
                 <Truncate
                     lines={!expanded && lines}
-                    ellipsis={(<span>... <a href='#' onClick={this.toggleLines}>{more}</a></span>)}
+                    ellipsis={(<span>... <Button size="sm" color="link" onClick={this.toggleLines}>{more}</Button></span>)}
                     onTruncate={this.handleTruncate}
                 >
                     {children}
                 </Truncate>
                 {!truncated && expanded && (
-                    <span> <a href='#' onClick={this.toggleLines}>{less}</a></span>
+                    <span> <Button size="sm" color="link" onClick={this.toggleLines}>{less}</Button></span>
                 )}
             </div>
         );

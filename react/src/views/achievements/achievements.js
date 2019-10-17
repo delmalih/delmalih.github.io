@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Local
-import Truncate from './components/truncate.component';
+// import Truncate from './components/truncate.component';
 
 const achievements = [
     {
@@ -11,16 +11,18 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Breast cancer detection algorithm on a small database of mammograms (~300 images)</span><br />
+                    <span>Project dedicated to the publication of a scientific article</span>
+                </div>
             </div>
         ),
         results: (
             <div>
                 <b>Results :</b><br />
-                <Truncate lines={1}>
-                    ONGOING
-                </Truncate>
+                <div>
+                    mAP (mean Average Precision) : 98.2%
+                </div>
             </div>
         ),
     },
@@ -30,16 +32,17 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Development of an algorithm that could classify images having only a one sample per category.</span><br />
+                </div>
             </div>
         ),
         results: (
             <div>
                 <b>Results :</b><br />
-                <Truncate lines={1}>
+                <div>
                     Categorical accuracy: 90%
-                </Truncate>
+                </div>
             </div>
         ),
     },
@@ -49,15 +52,18 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Development of an algorithm that could create a panorama of pictures of an aisle of a retail store without distorting the extremities images</span><br />
+                    <span>The standard panorama algorithm of our smartphones could not work because of the distortion of the extremities</span>
+                </div>
             </div>
         ),
         results: (
-            <div style={{width: '100%'}}>
+            <div>
                 <b>Results :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    Horizontal stitching algorithm for up to 50 images
+                </div>
             </div>
         ),
     },
@@ -67,16 +73,18 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Development of an algorithm that could detect shelves on retail store images.</span><br />
+                    <span>It draws a mask of 0-1 pixels (1's for the pixels belonging to a shelf)</span>
+                </div>
             </div>
         ),
         results: (
             <div>
                 <b>Results :</b><br />
-                <Truncate lines={1}>
+                <div>
                     Pixel accuracy: 98%
-                </Truncate>
+                </div>
             </div>
         ),
     },
@@ -86,22 +94,19 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                    <span>Development of a software for anomaly detection from given daily logs on a subway line</span>
-                    <br /><br />
+                <div>
+                    <span>Development of a software for anomaly detection from given daily logs on a subway line</span><br />
                     <span>Unsupervised pattern recognition in unstructured log-data</span>
-                </Truncate>
+                </div>
             </div>
         ),
         results: (
             <div>
                 <b>Results :</b><br />
-                <Truncate lines={1}>
-                    <ul>
-                        <li>LSTM Top-5 Accuracy: 99.94 %</li>
-                        <li>Turnkey software for future anomaly detection</li>
-                    </ul>
-                </Truncate>
+                <div>
+                    <span>• LSTM Top-5 Accuracy: 99.94 %</span><br />
+                    <span>• Turnkey software for future anomaly detection</span><br />
+                </div>
             </div>
         ),
     },
@@ -111,11 +116,12 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Development of a recruitment chatbot that pre-qualifies candidates using Messenger & Telegram</span><br />
+                    <span>Development of an admin dashboard to follow and control chatbot's actions</span>
+                </div>
             </div>
         ),
-        results: "TODO",
     },
     {
         title: "IoT Security Device",
@@ -123,11 +129,12 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Design and developed of an IoT security device from scratch, to protect staff from sexual harassment in hotels</span><br />
+                    <span>Sending and backing up warnings and alerts when the staff member notifies a danger</span>
+                </div>
             </div>
         ),
-        results: "TODO",
     },
     {
         title: "LSDJ Mobile App",
@@ -135,11 +142,12 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Le Silence Des Justes is a non-profit organization that helps children with autism</span><br />
+                    <span>Development of a mobile application for the collection of donations for the Le Silence Des Justes association</span>
+                </div>
             </div>
-        ),
-        results: "TODO",
+        )
     },
     {
         title: "How Many Shares ?",
@@ -147,11 +155,20 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Prediction of the number of shares an article will get on social media, from the article's topic, length, day of publication, and many other features</span><br />
+                    <span><b>Kaggle project:</b> <a href="https://www.kaggle.com/c/how-many-shares" target="_blank" rel="noopener noreferrer">kaggle.com/c/how-many-shares</a></span>
+                </div>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    RMSLE (Root Mean Squared Logarithmic Error): 0.89
+                </div>
+            </div>
+        ),
     },
     {
         title: "Digit Recognition Challenge",
@@ -159,11 +176,20 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Classification of digits algorithm trained on a dataset of tens of thousands of handwritten images.</span><br />
+                    <span><b>Kaggle project:</b> <a href="https://www.kaggle.com/c/digit-recognizer" target="_blank" rel="noopener noreferrer">kaggle.com/c/digit-recognizer</a></span>
+                </div>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    Accuracy: 99%
+                </div>
+            </div>
+        ),
     },
     {
         title: "Dogs vs Cats Challenge",
@@ -171,11 +197,20 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Classifcation algorithm that determines whether images contain either a dog or a cat</span><br />
+                    <span><b>Kaggle project:</b> <a href="https://www.kaggle.com/c/dogs-vs-cats" target="_blank" rel="noopener noreferrer">kaggle.com/c/dogs-vs-cats</a></span>
+                </div>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    TODO
+                </div>
+            </div>
+        ),
     },
     {
         title: "ConduiteCenter Website",
@@ -183,11 +218,15 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Full stack development of the website <a href="http://my.conduitecenter.fr" rel="noopener noreferrer" target="_blank">http://my.conduitecenter.fr</a> for the ConduiteCenter company, the online driving School</span><br />
+                    <span>• Scheduling courses depending on the availability of instructors and student</span><br />
+                    <span>• Ability to pay for packages online</span><br />
+                    <span>• Editing invoices and automatic contracts</span><br />
+                    <span>• Management of the company's cash flow from the website</span>
+                </div>
             </div>
         ),
-        results: "TODO",
     },
     {
         title: "Netflix - Recommendation algorithm",
@@ -195,11 +234,19 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Film recommendation algorithm trained on a database of notes that Netflix users (more than 2.5 million users) gave to films (18000 films)</span>
+                </div>
             </div>
         ),
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    <span>RMSE (Root Mean Squared Error): 0.1</span>
+                </div>
+            </div>
+        ),
     },
     {
         title: "Smart Motorized Stroller",
@@ -207,14 +254,12 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                    <span>Creation of a motorized stroller that does not need to be pushed</span>
-                    <br /><br />
+                <div>
+                    <span>Creation of a motorized stroller that does not need to be pushed</span><br />
                     <span>The stroller follows the person automatically without contact</span>
-                </Truncate>
+                </div>
             </div>
         ),
-        results: "TODO",
     },
     {
         title: "Graphing Calculator Programs",
@@ -222,11 +267,20 @@ const achievements = [
         content: (
             <div>
                 <b>Description :</b><br />
-                <Truncate lines={1}>
-                </Truncate>
+                <div>
+                    <span>Development of many applications for the TI-Nspire - a graphic calculator developed by Texas Instruments</span><br />
+                    <span>Programs designed to help baccalaureate students solving exercises</span>
+                </div>
             </div>
         ),        
-        results: "TODO",
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    <span>About 150.000 downloads</span>
+                </div>
+            </div>
+        ),
     },
 ];
 

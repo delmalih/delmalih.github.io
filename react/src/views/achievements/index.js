@@ -23,7 +23,7 @@ const Achievements = () => (
             <ToastRow>
             {
                 achievements.map((achievement, key) => (
-                    <ToastCol lg={3} md={4} sm={6} xs={12} key={key}>
+                    <ToastCol md={4} sm={6} xs={12} key={key}>
                         <Achievement
                             title={achievement.title}
                             imageSrc={achievement.imageSrc}
