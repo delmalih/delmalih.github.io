@@ -195,7 +195,7 @@ const achievements = [
             <div>
                 <b>Description :</b><br />
                 <div>
-                    <span>Classifcation algorithm that determines whether images contain either a dog or a cat.</span><br />
+                    <span>Classification algorithm that determines whether images contain either a dog or a cat.</span><br />
                     <span><b>Kaggle project:</b> <a href="https://www.kaggle.com/c/dogs-vs-cats" target="_blank" rel="noopener noreferrer">kaggle.com/c/dogs-vs-cats</a></span>
                 </div>
             </div>
