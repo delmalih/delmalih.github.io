@@ -1,9 +1,6 @@
 // achievements.js
 import React from 'react';
 
-// Local
-// import Truncate from './components/truncate.component';
-
 const achievements = [
     {
         title: "Breast Cancer Detection",
@@ -186,7 +183,7 @@ const achievements = [
             <div>
                 <b>Results :</b><br />
                 <div>
-                    Accuracy: 99%
+                    Categorical Accuracy: 99%
                 </div>
             </div>
         ),
@@ -207,7 +204,7 @@ const achievements = [
             <div>
                 <b>Results :</b><br />
                 <div>
-                    TODO
+                    Categorical Accuracy: 91%
                 </div>
             </div>
         ),
