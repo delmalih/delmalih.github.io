@@ -3,6 +3,46 @@ import React from 'react';
 
 const achievements = [
     {
+        title: "Machine Learning by Stanford University",
+        imageSrc: "images/achievements/stanford.png",
+        content: (
+            <div>
+                <b>Description :</b><br />
+                <div>
+                    <span>The CS229 course on machine learning by Stanford University on Coursera.</span><br />
+                </div>
+            </div>
+        ),
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    Course <a href="https://www.coursera.org/account/accomplishments/certificate/5ESK7HAM48SE" target="_blank" rel="noopener noreferrer">certificate</a>
+                </div>
+            </div>
+        )
+    },
+    {
+        title: <span>Deep Learning Specialization by <a href="https://www.deeplearning.ai/" target="_blank" rel="noopener noreferrer">deeplearning.ai</a></span>,
+        imageSrc: "images/achievements/deeplearning-ai.png",
+        content: (
+            <div>
+                <b>Description :</b><br />
+                <div>
+                    <span>Through five interconnected courses, learners develop a profound knowledge of the hottest AI algorithms, mastering deep learning from its foundations (neural networks) to its industry applications (Computer Vision, Natural Language Processing, Speech Recognition, etc.).</span><br />
+                </div>
+            </div>
+        ),
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    Course <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/9JG5RVYFBVGM" target="_blank" rel="noopener noreferrer">certificate</a>
+                </div>
+            </div>
+        )
+    },
+    {
         title: "Breast Cancer Detection",
         imageSrc: "images/achievements/breastCancer.png",
         content: (

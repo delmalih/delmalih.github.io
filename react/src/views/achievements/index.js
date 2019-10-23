@@ -19,7 +19,7 @@ import {
 const Achievements = () => (
     <BackgroundDiv id="Achievements">
         <Container>
-            <Title>Achievements</Title>
+            <Title>Achievements & Projects</Title>
             <ToastRow>
             {
                 achievements.map((achievement, key) => (
