@@ -50,7 +50,8 @@ const achievements = [
                 <b>Description :</b><br />
                 <div>
                     <span>Breast cancer detection algorithm on a small dataset of mammograms (~300 images).</span><br />
-                    <span>Project dedicated to the publication of a scientific article.</span>
+                    <span>Benchmark of Faster-RCNN, RetinaNet and FCOS algorithms.</span><br />
+                    <span>Project dedicated to the publication of a scientific article.</span><br />
                 </div>
             </div>
         ),
@@ -58,7 +59,29 @@ const achievements = [
             <div>
                 <b>Results :</b><br />
                 <div>
-                    mAP (mean Average Precision) : 98.2%
+                    mAP (mean Average Precision) : 95%<br />
+                    F1-Score: 96.9%
+                </div>
+            </div>
+        ),
+    },
+    {
+        title: "Predicting buying behavior of users",
+        imageSrc: "images/achievements/virtuo.png",
+        content: (
+            <div>
+                <b>Description :</b><br />
+                <div>
+                    <span>Customers clustering for behaviour analysis - Using Some feature processing, PCA and KMeans.</span><br />
+                    <span>Predicting if a prospect will become a good customer, a bad" one or will remain a prospect.</span><br />
+                </div>
+            </div>
+        ),
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    <b>ONGOING</b>
                 </div>
             </div>
         ),
