@@ -1,6 +1,9 @@
 // achievements.js
 import React from 'react';
 
+// Local
+import posterBreastCancerPDF from './posterBreastCancer.pdf';
+
 const achievements = [
     {
         title: "Machine Learning by Stanford University",
@@ -59,8 +62,8 @@ const achievements = [
             <div>
                 <b>Results :</b><br />
                 <div>
-                    mAP (mean Average Precision) : 95%<br />
-                    F1-Score: 96.9%
+                    F5-Score: 98.5% <br />
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open(posterBreastCancerPDF, "_blank")}>[POSTER]</a>
                 </div>
             </div>
         ),
