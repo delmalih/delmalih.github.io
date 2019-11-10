@@ -6,6 +6,30 @@ import posterBreastCancerPDF from './posterBreastCancer.pdf';
 
 const achievements = [
     {
+        title: "Breast Cancer Detection",
+        imageSrc: "images/achievements/breastCancer.png",
+        content: (
+            <div>
+                <b>Description :</b><br />
+                <div>
+                    <span>Breast cancer detection algorithm on a small dataset of mammograms (~300 images).</span><br />
+                    <span>Benchmark of Faster-RCNN, RetinaNet and FCOS algorithms.</span><br />
+                </div>
+            </div>
+        ),
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    mAP = 97.5% <br />
+                    F5-Score = 98.5% <br />
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open(posterBreastCancerPDF, "_blank")}>[POSTER]</a>{" "}
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://github.com/delmalih/MIAS-mammography-obj-detection", "_blank")}>[GITHUB REPO]</a>
+                </div>
+            </div>
+        ),
+    },
+    {
         title: "Machine Learning by Stanford University",
         imageSrc: "images/achievements/stanford.png",
         content: (
@@ -44,29 +68,6 @@ const achievements = [
                 </div>
             </div>
         )
-    },
-    {
-        title: "Breast Cancer Detection",
-        imageSrc: "images/achievements/breastCancer.png",
-        content: (
-            <div>
-                <b>Description :</b><br />
-                <div>
-                    <span>Breast cancer detection algorithm on a small dataset of mammograms (~300 images).</span><br />
-                    <span>Benchmark of Faster-RCNN, RetinaNet and FCOS algorithms.</span><br />
-                    <span>Project dedicated to the publication of a scientific article.</span><br />
-                </div>
-            </div>
-        ),
-        results: (
-            <div>
-                <b>Results :</b><br />
-                <div>
-                    F5-Score: 98.5% <br />
-                    <a href="#" rel="noopener noreferrer" onClick={() => window.open(posterBreastCancerPDF, "_blank")}>[POSTER]</a>
-                </div>
-            </div>
-        ),
     },
     {
         title: "Predicting buying behavior of users",
