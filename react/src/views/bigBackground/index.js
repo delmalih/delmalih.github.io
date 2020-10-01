@@ -26,7 +26,7 @@ const BigBackground = () => (
                 <Logo src='images/profilepic_croped.png' alt='david elmalih logo' />
             </LogoDiv>
             <Name>David EL MALIH</Name>
-            <SubName>Data scientist</SubName>
+            <SubName>Data scientist || Computer Vision Enthusiast</SubName>
             <SubName>MSc in Artificial Intelligence Student @ CentraleSupelec</SubName>
             <InfoRow>
                 <InfoCol lg={4} md={4} sm={12}>

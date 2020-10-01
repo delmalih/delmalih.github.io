@@ -29,6 +29,7 @@ const Skills = () => (
                 <Col lg={2} md={3} sm={6}><Logo src='images/skills/hadoop.png' /></Col>
                 <Col lg={2} md={3} sm={6}><Logo src='images/skills/spark.png' /></Col>
                 <Col lg={2} md={3} sm={6}><Logo src='images/skills/dialogflow.png' /></Col>
+                <Col lg={2} md={3} sm={6}><Logo src='images/skills/mxnet.png' /></Col>
             </Content>
             <TextDivider>WEB/MOBILE DEVELOPMENT</TextDivider>
             <Content>

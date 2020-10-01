@@ -3,8 +3,57 @@ import React from 'react';
 
 // Local
 import posterBreastCancerPDF from './posterBreastCancer.pdf';
+import RLSnakeGame from './RLSnakeGame.pdf';
+import oneShotClassification from './oneShotClassification.pdf';
+import wsiSegmentation from './wsiSegmentation.pdf';
 
 const achievements = [
+    {
+        title: "Whole Slide Images Segmentation",
+        imageSrc: "images/achievements/wsiSegmentation.png",
+        content: (
+            <div>
+                <b>Description :</b><br />
+                <div>
+                    <span>Segmentation of Colony tissue whole slide images using Patch UNet.</span><br />
+                </div>
+            </div>
+        ),
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    Dice Score = 86.18% <br />
+                    IoU Score = 77.09% <br />
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open(wsiSegmentation, "_blank")}>[PAPER]</a>{" "}
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://github.com/delmalih/WSI-Segmentation-Patch", "_blank")}>[GITHUB]</a>{" "}
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://www.youtube.com/watch?v=SAZHsepdNuk&feature=youtu.be", "_blank")}>[PRESENTATION]</a>
+                </div>
+            </div>
+        ),
+    },
+    {
+        title: "Reinforcement Learning - Snake Game",
+        imageSrc: "images/achievements/RLSnakeGame.png",
+        content: (
+            <div>
+                <b>Description :</b><br />
+                <div>
+                    <span>Training an AI player, using reinforcement learning, to play the snake game.</span><br />
+                </div>
+            </div>
+        ),
+        results: (
+            <div>
+                <b>Results :</b><br />
+                <div>
+                    An AI Player able to beat human performance at snake game. <br />
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open(RLSnakeGame, "_blank")}>[PAPER]</a>{" "}
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://github.com/delmalih/Snake-DeepRL", "_blank")}>[GITHUB]</a>
+                </div>
+            </div>
+        ),
+    },
     {
         title: "Breast Cancer Detection",
         imageSrc: "images/achievements/breastCancer.png",
@@ -24,7 +73,8 @@ const achievements = [
                     mAP = 97.5% <br />
                     F5-Score = 98.5% <br />
                     <a href="#" rel="noopener noreferrer" onClick={() => window.open(posterBreastCancerPDF, "_blank")}>[POSTER]</a>{" "}
-                    <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://github.com/delmalih/MIAS-mammography-obj-detection", "_blank")}>[GITHUB REPO]</a>
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://github.com/delmalih/MIAS-mammography-obj-detection", "_blank")}>[GITHUB]</a>{" "}
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://medium.com/analytics-vidhya/breast-cancer-detection-benchmarking-3-sota-networks-767991a77521", "_blank")}>[MEDIUM]</a>
                 </div>
             </div>
         ),
@@ -77,7 +127,7 @@ const achievements = [
                 <b>Description :</b><br />
                 <div>
                     <span>Customers clustering for behaviour analysis - Using Some feature processing, PCA and KMeans.</span><br />
-                    <span>Predicting if a prospect will become a good customer, a bad" one or will remain a prospect.</span><br />
+                    <span>Predicting if a prospect will become a good customer, a bad one or will remain a prospect.</span><br />
                 </div>
             </div>
         ),
@@ -105,7 +155,9 @@ const achievements = [
             <div>
                 <b>Results :</b><br />
                 <div>
-                    Categorical accuracy: 90%
+                    Categorical accuracy: 90% <br />
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open(oneShotClassification, "_blank")}>[PAPER]</a>{" "}
+                    <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://github.com/delmalih/one_shot_classification_and_detection", "_blank")}>[GITHUB]</a>
                 </div>
             </div>
         ),

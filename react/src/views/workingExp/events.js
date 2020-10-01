@@ -3,6 +3,24 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import Fa from 'react-fontawesome';
 
+const work_therapanacea = {
+    title: "Research Data Scientist Intern @ TheraPanacea",
+    date: "Apr 2020 - Oct 2020 (6 months)",
+    imageSrc: "images/experience/therapanacea.png",
+    location: "Paris, FR",
+    badges: ["Medical Imaging", "Segmentation", "Registration", "3D Volumes Processing"],
+    description: (
+        <div>
+            <span>TheraPanacea is a highly ambitious artificial intelligence-powered French spinoff medical technology company exploiting state-of-the-art research technology with origins from Ecole CentraleSupelec, Inria and Gustave Roussy Institute. TheraPanacea brings to the radiation therapy market the latest inter-disciplinary technological advances from the associated research laboratories.</span>
+            <ul>
+                <li>Developed custom registration model (rigid and deformable) to perform 3D volumes segmentation by registering them onto some atlases and using ensembling techniques - Reaching 80% dice score on small organs (parotid and eye).</li>
+                <li>Benchmarking registration pipelines: <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://arxiv.org/abs/1809.05231", "_blank")}>VoxelMorph</a>, <a href="#" rel="noopener noreferrer" onClick={() => window.open("https://arxiv.org/abs/2003.07072", "_blank")}>LT-Net</a></li>
+            </ul>
+            <span><b>Techs:</b> Python, Apache MXNet, Pytorch, DICOMs</span>
+        </div>
+    ),
+};
+
 const work_yoobic = {
     title: "Research Data Scientist Intern @ Yoobic",
     date: "Sep 2018 - Aug 2019 (1 year)",
@@ -42,20 +60,20 @@ const work_pdl = {
     ),
 };
 
-const work_accorhotels = {
-    title: "IoT Project @ AccorHotels Group",
-    date: "Feb 2018 - Apr 2018 (2.5 months)",
-    imageSrc: "images/experience/accorhotels.png",
+const work_ratp = {
+    title: "Data Science Project @ RATP Group",
+    date: "May 2018 - Jul 2018 (2.5 months)",
+    imageSrc: "images/experience/ratp.png",
     location: "Paris, FR",
-    badges: ["IoT", "Security device", "LoraWAN", "Arduino", "RFID/NFC"],
+    badges: ["Unsupervised Learning", "LSTMs", "Anomaly detection", "Subway line data"],
     description: (
       <div>
         <ul>
-            <li>Worldwide leader in Hospitality and services – Over 250.000 women and men in nearly 4200 AccorHotels addresses look after thousands of guests every day in 95 countries</li>
-            <li>Design and development of an IoT security device from scratch, to protect staff from sexual harassment in hotels</li>
-            <li>Sending and backing up warnings and alerts when the staff member notifies a danger</li>
+            <li>State-owned public transport operator in Paris</li>
+            <li>Development of a software for anomaly detection from given daily logs on a subway line</li>
+            <li>Unsupervised pattern recognition in unstructured log-data</li>
         </ul>
-        <span><b>Techs: </b>LoraWAN, Arduino, RFID/NFC, Node.js, ReactJS</span>
+        <span><b>Techs: </b>Python, Tensorflow, Keras, LSTMs, Pandas, Flask, ReactJS</span>
       </div>
     ),
 };
@@ -78,20 +96,20 @@ const work_interimco = {
     ),
 };
 
-const work_ratp = {
-    title: "Data Science Project @ RATP Group",
-    date: "May 2018 - Jul 2018 (2.5 months)",
-    imageSrc: "images/experience/ratp.png",
+const work_accorhotels = {
+    title: "IoT Project @ AccorHotels Group",
+    date: "Feb 2018 - Apr 2018 (2.5 months)",
+    imageSrc: "images/experience/accorhotels.png",
     location: "Paris, FR",
-    badges: ["Unsupervised Learning", "LSTMs", "Anomaly detection", "Subway line data"],
+    badges: ["IoT", "Security device", "LoraWAN", "Arduino", "RFID/NFC"],
     description: (
       <div>
         <ul>
-            <li>State-owned public transport operator in Paris</li>
-            <li>Development of a software for anomaly detection from given daily logs on a subway line</li>
-            <li>Unsupervised pattern recognition in unstructured log-data</li>
+            <li>Worldwide leader in Hospitality and services – Over 250.000 women and men in nearly 4200 AccorHotels addresses look after thousands of guests every day in 95 countries</li>
+            <li>Design and development of an IoT security device from scratch, to protect staff from sexual harassment in hotels</li>
+            <li>Sending and backing up warnings and alerts when the staff member notifies a danger</li>
         </ul>
-        <span><b>Techs: </b>Python, Tensorflow, Keras, LSTMs, Pandas, Flask, ReactJS</span>
+        <span><b>Techs: </b>LoraWAN, Arduino, RFID/NFC, Node.js, ReactJS</span>
       </div>
     ),
 };
@@ -172,11 +190,12 @@ const work_cc = {
 };
 
 export default [
+    work_therapanacea,
     work_yoobic,
     work_pdl,
-    work_accorhotels,
-    work_interimco,
     work_ratp,
+    work_interimco,
+    work_accorhotels,
     work_lsdj,
     work_valeo,
     work_cc,
